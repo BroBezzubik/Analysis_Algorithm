@@ -14,10 +14,9 @@ int levenstain4(char* str1, char* str2) {
 	
 	if (lenstr1 < 2 || lenstr2 < 2)
 		return levenstain3(str1, str2);
-
 	
-	unsigned rows = lenstr1 + 1;
-	unsigned columns = lenstr2 + 1;
+	unsigned columns = lenstr1 + 1;
+	unsigned rows = lenstr2 + 1;
 
 	int* storage[3];
 	for (int i = 0; i < 3; i++)
@@ -33,7 +32,6 @@ int levenstain4(char* str1, char* str2) {
 	for (unsigned i = 1; i < rows; i++) {
 		bool sumbNotSame = false;
 		if (str1[i - 1] != str2[0]) {
-			cout << "Error";
 			sumbNotSame = true;
 		}
 		storage[1][i] = min(min(storage[1][i - 1] + 1, storage[0][i] + 1), storage[0][i - 1] + sumbNotSame);
@@ -55,20 +53,12 @@ int levenstain4(char* str1, char* str2) {
 				symbNotSame = true;
 			}
 
-			int mistake = 99999;
-			if (str1[i] == str2[i - 1] && str1[i - 1] == str2[i]) {
-				mistake = 0;
-			}
-			
-			cout << endl;
-			cout << str1[i] << " " << str2[i + 1] << endl;
-			cout << str1[i + 1] << " " << str2[i] << endl;
-			cout << mistake << endl;
-
-			storage[2][j] = min(min(min(
+			int tmp = min(min(min(
 				storage[1][j] + 1, storage[2][j - 1] + 1),
 				storage[1][j - 1] + symbNotSame),
-				storage[0][j - 2] + 1 + mistake);
+				storage[0][j - 2] + 1);
+
+			storage[2][j] = tmp;
 		}
 		
 		swap(storage[0], storage[1]);

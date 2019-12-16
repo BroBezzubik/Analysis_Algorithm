@@ -78,22 +78,21 @@ void case1(void) {
 	diff = end - start;
 	
 	cout << "### LEV MOD ###" << endl
-		<< str1 << endl
-		<< str2 << endl
 		<< "Lev: " << lev3 << endl
 		<< "Time: " << diff.count() << endl << endl;
 
 }
 
+#define LEN 3000
 
 void case2(void) {
-	char str1[1001];
-	char str2[1001];
+	char str1[LEN];
+	char str2[LEN];
 
-	gen_random(str1, 1000);
-	gen_random(str2, 1000);
+	gen_random(str1, LEN - 1);
+	gen_random(str2, LEN - 1);
 
-	int count = 100;
+	int count = 1000;
 
 	auto start = chrono::high_resolution_clock::now();
 	int lev1 = test(levenstain3, str1, str2, count);
@@ -101,8 +100,6 @@ void case2(void) {
 	chrono::duration<double> diff = (end - start) / count;
 	
 	cout << "### LEV ###" << endl
-		<< str1 << endl
-		<< str2 << endl
 		<< "Lev: " << lev1 << endl
 		<< "Time: " << diff.count() << endl << endl;
 
@@ -123,8 +120,6 @@ void case2(void) {
 	diff = (end - start) / count;
 	
 	cout << "### LEV MOD ###" << endl
-		<< str1 << endl
-		<< str2 << endl
 		<< "Lev: " << lev3 << endl
 		<< "Time: " << diff.count() << endl << endl;
 }
