@@ -32,7 +32,8 @@ int levenstain4(char* str1, char* str2) {
 	storage[1][0] = 1;
 	for (unsigned i = 1; i < rows; i++) {
 		bool sumbNotSame = false;
-		if (str2[i - 1] != str1[0]) {
+		if (str1[i - 1] != str2[0]) {
+			cout << "Error";
 			sumbNotSame = true;
 		}
 		storage[1][i] = min(min(storage[1][i - 1] + 1, storage[0][i] + 1), storage[0][i - 1] + sumbNotSame);
@@ -42,7 +43,7 @@ int levenstain4(char* str1, char* str2) {
 		storage[2][0] = storage[1][0] + 1;
 		bool symbNotSame = false;
 
-		if (str2[0] != str1[i - 1]) {
+		if (str1[1] != str2[i - 1]) {
 			symbNotSame = true;
 		}
 
@@ -50,22 +51,32 @@ int levenstain4(char* str1, char* str2) {
 		
 		for (unsigned j = 2; j < rows; j++) {
 			symbNotSame = false;
-			if (str2[i - 1] != str1[j - 1]) { // i поменял j
+			if (str2[j - 1] != str1[i - 1]) { // i поменял j
 				symbNotSame = true;
 			}
+
+			int mistake = 99999;
+			if (str1[i] == str2[i - 1] && str1[i - 1] == str2[i]) {
+				mistake = 0;
+			}
+			
+			cout << endl;
+			cout << str1[i] << " " << str2[i + 1] << endl;
+			cout << str1[i + 1] << " " << str2[i] << endl;
+			cout << mistake << endl;
 
 			storage[2][j] = min(min(min(
 				storage[1][j] + 1, storage[2][j - 1] + 1),
 				storage[1][j - 1] + symbNotSame),
-				storage[0][j - 2] + 1);
+				storage[0][j - 2] + 1 + mistake);
 		}
-
+		
 		swap(storage[0], storage[1]);
 		swap(storage[1], storage[2]);
 	}
 	
 	int result = storage[1][rows - 1];
-
+	
 	delete storage[0];
 	delete storage[1];
 	delete storage[2];

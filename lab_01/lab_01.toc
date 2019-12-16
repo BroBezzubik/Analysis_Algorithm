@@ -1,0 +1,48 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {russian}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Аналитическая часть}{2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1}Постановка задачи}{2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2}Описание алгоритма}{2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Конструкторский раздел}{3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1}Алгоритм}{3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.1.1}Итеративный алгоритм}{3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.1.2}Рекурсивный алгор}{3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2}Типы и структуры данных}{3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3}Структура программы}{3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Технологический раздел}{6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1}Требования}{6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2}Выбор языка и среды разработки}{6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3}Интерфейс}{6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4}Листинг}{6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.4.1}Итеративный Левенштейн}{6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.4.2}Левенштейн рекурсивный}{7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.4.3}Левенштейн модифицированный}{8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Испледовательский раздел}{10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1}Сравнение}{10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.1}Общие результаты замеров}{10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.2}Детальное сравнение}{10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Вывод}{11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Список источников}{12}%

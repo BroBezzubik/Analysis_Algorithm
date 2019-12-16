@@ -73,7 +73,7 @@ void case1(void) {
 		<< "Time: " << diff.count() << endl << endl;
 
 	start = chrono::high_resolution_clock::now();
-	int lev3 = test(levenstain4, str1, str2, 100);
+	int lev3 = test(levenstain4, str1, str2, 1);
 	end = chrono::high_resolution_clock::now();
 	diff = end - start;
 	
@@ -87,20 +87,18 @@ void case1(void) {
 
 
 void case2(void) {
-	char str1[30];
-	char str2[30];
+	char str1[1001];
+	char str2[1001];
 
-	gen_random(str1, 10);
-	gen_random(str2, 10);
+	gen_random(str1, 1000);
+	gen_random(str2, 1000);
 
-	int count = 1000;
+	int count = 100;
 
 	auto start = chrono::high_resolution_clock::now();
 	int lev1 = test(levenstain3, str1, str2, count);
-	cout << clock();
 	auto end = chrono::high_resolution_clock::now();
-	cout << clock();
-	chrono::duration<double> diff = end - start;
+	chrono::duration<double> diff = (end - start) / count;
 	
 	cout << "### LEV ###" << endl
 		<< str1 << endl
@@ -108,23 +106,21 @@ void case2(void) {
 		<< "Lev: " << lev1 << endl
 		<< "Time: " << diff.count() << endl << endl;
 
-	start = chrono::high_resolution_clock::now();
-	cout << clock();
-	int lev2 = test(levenstainRec3, str1, str2, count);
-	cout << clock();
-	end = chrono::high_resolution_clock::now();
-	diff = end - start;
+	//start = chrono::high_resolution_clock::now();
+	//int lev2 = test(levenstainRec3, str1, str2, count);
+	//end = chrono::high_resolution_clock::now();
+	//diff = (end - start) / count;
 	
-	cout << "### LEV REC ###" << endl
-		<< str1 << endl
-		<< str2 << endl
-		<< "Lev: " << lev2 << endl
-		<< "Time: " << diff.count() << endl << endl;
+	//cout << "### LEV REC ###" << endl
+	//	<< str1 << endl
+	//	<< str2 << endl
+	//	<< "Lev: " << lev2 << endl
+	//	<< "Time: " << diff.count() << endl << endl;
 
 	start = chrono::high_resolution_clock::now();
 	int lev3 = test(levenstain4, str1, str2, count);
 	end = chrono::high_resolution_clock::now();
-	diff = end - start;
+	diff = (end - start) / count;
 	
 	cout << "### LEV MOD ###" << endl
 		<< str1 << endl
@@ -136,7 +132,12 @@ void case2(void) {
 
 int main()
 {
-	int key = 2;
+	int key = 0;
+	cout << "1 - User input" << endl
+		<< "2 - Random" << endl;
+
+	cout << "Selecet opetation: ";
+	cin >> key; 
 
 	switch (key)
 	{
