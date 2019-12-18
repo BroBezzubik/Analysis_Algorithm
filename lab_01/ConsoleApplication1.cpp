@@ -46,11 +46,13 @@ void case1(void) {
 	cout << "Str2: ";
 	cin >> str2;
 
+	cout << "Input value of runs: ";
+	int runs;
+	cin >> runs;
+
 	auto start = chrono::high_resolution_clock::now();
-	int lev1 = test(levenstain3, str1, str2, 100);
-	cout << clock();
+	int lev1 = test(levenstain3, str1, str2, runs);
 	auto end = chrono::high_resolution_clock::now();
-	cout << clock();
 	chrono::duration<double> diff = end - start;
 	
 	cout << "### LEV ###" << endl
@@ -60,9 +62,7 @@ void case1(void) {
 		<< "Time: " << diff.count() << endl << endl;
 
 	start = chrono::high_resolution_clock::now();
-	cout << clock();
-	int lev2 = test(levenstainRec3, str1, str2, 100);
-	cout << clock();
+	int lev2 = test(levenstainRec3, str1, str2, runs);
 	end = chrono::high_resolution_clock::now();
 	diff = end - start;
 	
@@ -73,7 +73,7 @@ void case1(void) {
 		<< "Time: " << diff.count() << endl << endl;
 
 	start = chrono::high_resolution_clock::now();
-	int lev3 = test(levenstain4, str1, str2, 1);
+	int lev3 = test(levenstain4, str1, str2, runs);
 	end = chrono::high_resolution_clock::now();
 	diff = end - start;
 	
@@ -83,41 +83,54 @@ void case1(void) {
 
 }
 
-#define LEN 3000
+#define LEN 10001 
 
 void case2(void) {
 	char str1[LEN];
 	char str2[LEN];
 
-	gen_random(str1, LEN - 1);
-	gen_random(str2, LEN - 1);
+	cout << "Input len of strings (1 - 10000): ";
+	int len;
+	cin >> len;
 
-	int count = 1000;
+	cout << "Input count of runs: (1-1000): ";
+	int count = 1;
+	cin >> count;
+
+	gen_random(str1, len);
+	gen_random(str2, len);
 
 	auto start = chrono::high_resolution_clock::now();
 	int lev1 = test(levenstain3, str1, str2, count);
 	auto end = chrono::high_resolution_clock::now();
 	chrono::duration<double> diff = (end - start) / count;
 	
+	cout << "Running test of LEV..." << endl << endl;
+
 	cout << "### LEV ###" << endl
 		<< "Lev: " << lev1 << endl
 		<< "Time: " << diff.count() << endl << endl;
 
-	//start = chrono::high_resolution_clock::now();
-	//int lev2 = test(levenstainRec3, str1, str2, count);
-	//end = chrono::high_resolution_clock::now();
-	//diff = (end - start) / count;
+	start = chrono::high_resolution_clock::now();
+	int lev2 = test(levenstainRec3, str1, str2, count);
+	end = chrono::high_resolution_clock::now();
+	diff = (end - start) / count;
 	
-	//cout << "### LEV REC ###" << endl
-	//	<< str1 << endl
-	//	<< str2 << endl
-	//	<< "Lev: " << lev2 << endl
-	//	<< "Time: " << diff.count() << endl << endl;
+	
+	cout << "Running test of REC..." << endl << endl;
+	
+	cout << "### LEV REC ###" << endl
+		<< str1 << endl
+		<< str2 << endl
+		<< "Lev: " << lev2 << endl
+		<< "Time: " << diff.count() << endl << endl;
 
 	start = chrono::high_resolution_clock::now();
 	int lev3 = test(levenstain4, str1, str2, count);
 	end = chrono::high_resolution_clock::now();
 	diff = (end - start) / count;
+	
+	cout << "Running test of MOD..." << endl << endl;
 	
 	cout << "### LEV MOD ###" << endl
 		<< "Lev: " << lev3 << endl
