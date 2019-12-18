@@ -1,52 +1,20 @@
-\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {russian}{}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Аналитическая часть}{2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1}Постановка задачи}{2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2}Описание алгоритма}{2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Конструкторский раздел}{3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1}Алгоритм}{3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.1.1}Итеративный алгоритм}{3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.1.2}Рекурсивный алгор}{3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2}Типы и структуры данных}{3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3}Структура программы}{3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Технологический раздел}{6}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}Требования}{6}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}Выбор языка и среды разработки}{6}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}Интерфейс}{6}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4}Листинг}{6}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.4.1}Итеративный Левенштейн}{6}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.4.2}Левенштейн рекурсивный}{7}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.4.3}Левенштейн модифицированный}{8}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Исследовательский раздел}{10}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Сравнение}{10}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.1}Общие результаты замеров}{10}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.2}Детальное сравнение}{10}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Вывод}{11}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Заключение}{12}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Список источников}{13}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{bibname}{13}%
+\contentsline {section}{\numberline {1}Аналитическая часть}{3}{section.1}%
+\contentsline {subsubsection}{\numberline {1.0.1}Вывод}{4}{subsubsection.1.0.1}%
+\contentsline {section}{\numberline {2}Конструкторский раздел}{5}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Алгоритм}{5}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Структура программы}{6}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Вывод}{7}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Технологический раздел}{8}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Требования}{8}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Выбор языка и среды разработки}{8}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Интерфейс}{8}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Листинг}{9}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Вывод}{12}{subsection.3.5}%
+\contentsline {section}{\numberline {4}Исследовательский раздел}{13}{section.4}%
+\contentsline {subsubsection}{\numberline {4.0.1}Железо}{13}{subsubsection.4.0.1}%
+\contentsline {subsection}{\numberline {4.1}Сравнение}{13}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Общие результаты замеров}{13}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}Детальное сравнение}{14}{subsubsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.2}Вывод}{16}{subsection.4.2}%
+\contentsline {section}{Список литературы}{18}{Item.40}%

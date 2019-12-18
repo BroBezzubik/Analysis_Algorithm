@@ -22,12 +22,10 @@ int levenstain4(char* str1, char* str2) {
 	for (int i = 0; i < 3; i++)
 		storage[i] = new int[rows];
 
-	// Заполнение первого столбца
 	for (unsigned i = 0; i < rows; i++) {
 		storage[0][i] = i;
 	}
 
-	// Заполнение второго столбца
 	storage[1][0] = 1;
 	for (unsigned i = 1; i < rows; i++) {
 		bool sumbNotSame = false;
@@ -49,14 +47,23 @@ int levenstain4(char* str1, char* str2) {
 		
 		for (unsigned j = 2; j < rows; j++) {
 			symbNotSame = false;
-			if (str2[j - 1] != str1[i - 1]) { // i поменял j
+			if (str2[j - 1] != str1[i - 1]) {
 				symbNotSame = true;
 			}
 
-			int tmp = min(min(min(
-				storage[1][j] + 1, storage[2][j - 1] + 1),
-				storage[1][j - 1] + symbNotSame),
-				storage[0][j - 2] + 1);
+			int tmp;
+
+			if (str1[i - 1] == str2[i] && str1[i] == str2[i - 1]) {
+				tmp = min(min(
+					storage[1][j] + 1, storage[2][j - 1] + 1),
+					storage[1][j - 1] + symbNotSame);
+
+			} else {
+				tmp = min(min(min(
+					storage[1][j] + 1, storage[2][j - 1] + 1),
+					storage[1][j - 1] + symbNotSame),
+					storage[0][j - 2] + 1);
+			}
 
 			storage[2][j] = tmp;
 		}
