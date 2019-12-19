@@ -213,3 +213,15 @@ Matrix Matrix::vinogradImprMult(const Matrix& other, std::clock_t& time) {
 
 	return result;
 }
+
+void Matrix::outStream()
+{
+	for (int i = 0; i < rows; i++) {
+		
+		for (int j = 0; j < columns; j++) {
+
+			std::cout << data[i][j] << " ";
+		}
+		std::cout << std::endl;
+	}
+}

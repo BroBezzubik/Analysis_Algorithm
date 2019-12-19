@@ -18,6 +18,7 @@ public:
 	Matrix vinogradMult(const Matrix& other, std::clock_t& time);
 	Matrix vinogradImprMult(const Matrix& other, std::clock_t& time);
 
+	void outStream();
 private:
 	unsigned rows;
 	unsigned columns;

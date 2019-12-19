@@ -73,6 +73,13 @@ int main(){
 		std::cout << "Improved Vinograd win by " << (timeVinograd - timeVinogradImpr) * 100 / timeVinograd << "%" << std::endl;
 	}
 
+	if (size < 10) {
+
+		original.outStream();
+		mult.outStream();
+
+	}
+
 	return 0;
 
 }
