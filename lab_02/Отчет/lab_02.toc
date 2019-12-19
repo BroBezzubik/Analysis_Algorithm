@@ -12,16 +12,15 @@
 \contentsline {subsubsection}{\numberline {2.3.1}Классический алгоритм}{8}{subsubsection.2.3.1}%
 \contentsline {subsubsection}{\numberline {2.3.2}Алгоритм Винограда}{8}{subsubsection.2.3.2}%
 \contentsline {subsubsection}{\numberline {2.3.3}Мод. Алгоритм Винограда}{8}{subsubsection.2.3.3}%
+\contentsline {subsubsection}{\numberline {2.3.4}Вывод}{8}{subsubsection.2.3.4}%
 \contentsline {section}{\numberline {3}Технологический раздел}{9}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Требования}{9}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.1}Минимальные требования}{9}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Выбор языка и среды разработки}{9}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Интерфейс}{9}{subsection.3.3}%
 \contentsline {subsection}{\numberline {3.4}Листинг}{9}{subsection.3.4}%
-\contentsline {subsubsection}{\numberline {3.4.1}Классический}{9}{subsubsection.3.4.1}%
-\contentsline {subsubsection}{\numberline {3.4.2}Винограда}{10}{subsubsection.3.4.2}%
-\contentsline {subsubsection}{\numberline {3.4.3}Виногорада улучшенный}{11}{subsubsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.5}Вывод}{13}{subsection.3.5}%
 \contentsline {section}{\numberline {4}Исследовательский раздел}{14}{section.4}%
 \contentsline {subsubsection}{\numberline {4.0.1}Debug}{14}{subsubsection.4.0.1}%
 \contentsline {subsubsection}{\numberline {4.0.2}Release}{15}{subsubsection.4.0.2}%
 \contentsline {subsection}{\numberline {4.1}Вывод}{16}{subsection.4.1}%
-\contentsline {section}{Список литературы}{17}{subsection.4.1}%
+\contentsline {section}{Список литературы}{17}{Item.44}%
