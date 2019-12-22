@@ -39,9 +39,6 @@ int main(){
        }
    }
 
-  printMatrix(a);
-  cout << endl;
-
   ivMatrix b;
   b.m = 3; b.n = 3;
 
