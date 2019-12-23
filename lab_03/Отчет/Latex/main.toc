@@ -37,4 +37,4 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5}Заключение}{18}{section.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Список литературы}{19}{Item.49}%
+\contentsline {section}{Список литературы}{19}{Item.56}%
