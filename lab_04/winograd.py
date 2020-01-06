@@ -38,13 +38,13 @@ def optimized_winograd(A, B):
     N = len(B)
     Q = len(B[0])
     
-    C = np.zeros((M, Q)) # Результирующая матрица
+    C = np.zeros((M, Q))
 
     if N != len(A[0]):
-        print("В матрицах А(m, n), B(q, r) n != q")
+        print("In Matrix: A(m, n), B(q, r) n != q")
         return None
 
-    # Оптимизация №1 - избавиться от деления в цикле
+
     d = N // 2
 
     MulH = np.zeros((M))
@@ -58,13 +58,12 @@ def optimized_winograd(A, B):
         for j in range(d):
             MulV[i] += B[2 * j][i] * B[2 * j + 1][i]
 
-    # Оптимизация №2 накопление результата в буфер
+
     for i in range(M):
         for j in range(Q):
             buff = -(MulH[i] + MulV[j])
             for k in range(d):
                 buff += ((A[i][2 * k + 1] + B[2 * k][j]) * (A[i][2 * k] + B[2 * k + 1][j]))
-            # Сброс буфера в ячейку
             C[i][j] = buff
                 
     if N % 2 != 0:
@@ -72,7 +71,7 @@ def optimized_winograd(A, B):
             for j in range(Q):
                 C[i][j] += A[i][N - 1] * B[N - 1][j]
 
-    # Очистка временных массивов
+
     del MulH
     del MulV
 
@@ -95,19 +94,18 @@ def optimized_winograd_parallel(A, B):
     N = len(B)
     Q = len(B[0])
     
-    C = np.zeros((M, Q)) # Результирующая матрица
+    C = np.zeros((M, Q))
 
     if N != len(A[0]):
-        print("В матрицах А(m, n), B(q, r) n != q")
+        print("In matrix: А(m, n), B(q, r) n != q")
         return None
 
-    # Оптимизация №1 - избавиться от деления в цикле
+
     d = N // 2
 
     MulH = np.zeros((M))
     MulV = np.zeros((Q))
 
-    # Данная оптимизация позволянт увеличить скорость алгоритма на 10%
     # Thread 1, fill MulH
     thread_1 = threading.Thread(target=parallel_thread_1, args=(A, M, d, MulH), daemon=True)
     # Thread 2, fill MulV
@@ -116,13 +114,11 @@ def optimized_winograd_parallel(A, B):
     thread_1.start()
     thread_2.start()
 
-    # Оптимизация №2 накопление результата в буфер
     for i in range(M):
         for j in range(Q):
             buff = -(MulH[i] + MulV[j])
             for k in range(d):
                 buff += ((A[i][2 * k + 1] + B[2 * k][j]) * (A[i][2 * k] + B[2 * k + 1][j]))
-            # Сброс буфера в ячейку
             C[i][j] = buff
                 
     if N % 2 != 0:
@@ -130,7 +126,6 @@ def optimized_winograd_parallel(A, B):
             for j in range(Q):
                 C[i][j] += A[i][N - 1] * B[N - 1][j]
 
-    # Очистка временных массивов
     del MulH
     del MulV
 

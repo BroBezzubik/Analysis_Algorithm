@@ -1,0 +1,48 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {russian}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Аналитический раздел}{3}{section.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1}Постановка задачи}{3}{subsection.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2}Классический подход}{3}{subsection.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3}Алгоритм Винограда}{4}{subsection.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.4}Оптимизированный алгоритм Винограда}{4}{subsection.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.5}Распараллеливание задачи на CPU}{4}{subsection.1.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.6}Вывод}{5}{subsection.1.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Конструкторский раздел}{6}{section.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.0.1}Оценка трудоемкости алгоритмов}{6}{subsubsection.2.0.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.0.2}Классический алгоритм умножения матриц}{6}{subsubsection.2.0.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.0.3}Алгоритм Винограда}{6}{subsubsection.2.0.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.0.4}Оптимизированный алгоритм Винограда}{7}{subsubsection.2.0.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1}Схемы}{7}{subsection.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2}Вывод}{10}{subsection.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Технологический раздел}{11}{section.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1}Минимальные требования}{11}{subsection.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2}Выбор языка и среды разработки}{11}{subsection.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3}Листинг}{11}{subsection.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Исследовательский раздел}{13}{section.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1}Характеристики оборудования}{13}{subsection.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2}Вывод}{14}{subsection.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Заключение}{15}{section.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Список литературы}{16}{section.5}%
