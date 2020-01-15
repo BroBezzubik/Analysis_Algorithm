@@ -3,14 +3,13 @@
 \usepackage[russian]{babel}
 \usepackage{graphicx}
 \usepackage{float}
-\usepackage{amssymb}
 \usepackage{amsmath}
 \usepackage{pgfplots}
 \usepackage{hyperref}
 \usepackage{subfiles}
 \usepackage[shortlabels]{enumitem}
 \usepackage{titlesec}
-\usepackage{algorithm}
+\usepackage[linesnumbered,vlined,boxed,commentsnumbered, ruled]{algorithm2e}
 \usepackage{algpseudocode}
 
 
@@ -40,20 +39,13 @@ sorting=ynt]
 	framexrightmargin=20mm
 }
 
-
-\DeclareUnicodeCharacter{03BB}{\ensuremath{\lambda}}
-\DeclareUnicodeCharacter{03B7}{\ensuremath{\eta}}
-\DeclareUnicodeCharacter{03C4}{\ensuremath{\tau}}
-\DeclareUnicodeCharacter{03C1}{\ensuremath{\rho}}
-
-
 \begin{document}
 	\begin{titlepage}
 		\begin{center}
 			\begin{LARGE}
-				Отчет по лабораторной работе №6\\
+				Отчет по лабораторной работе №7\\
 				по курсу "Анализ алгоритмов"\\
-				по теме "Муравьиный алгоритм"
+				по теме "Методы поиска подстроки в строке"
 			\end{LARGE}
 			
 			\begin{Large}
@@ -94,14 +86,7 @@ sorting=ynt]
 	
 	\newpage
 	\addcontentsline{toc}{section}{Список использованных источников}
-	\begin{thebibliography}{00} % Список литературы
-		\bibitem{TSP}
-		Задача коммивояжера - метод ветвей и границ. -- URL: $http://galyautdinov.ru/post/zadacha-kommivoyazhera$
-		\bibitem{AntAlg}
-		Штовба С. Д. Муравьиные алгоритмы, Exponenta Pro. Математика в приложениях. 2004. № 4
-		\bibitem{ACS}
-		M. Dorigo \& L. M. Gambardella, 1997. «Ant Colony System: A Cooperative Learning Approach to the Traveling Salesman Problem». IEEE Transactions on Evolutionary Computation, 1 (1): 53-66.
-		\bibitem{RECA}
-		М.В.Ульянов. Ресурсно-эффективные компьютерные алгоритмы $//$ 2007. - Раздел III. - Глава 7. - С.195-206.
+	\begin{thebibliography}{1}
+		
 	\end{thebibliography}
 \end{document}
