@@ -70,6 +70,7 @@ def stateMachine(text : str):
 
 def main():
     text = """Котик мурлыкал от того, что его гладили по брюшку. Рыбка. Дочка, Доча, Девочка, Женщина"""
+    print(text)
     findWords(text)
     stateMachine(text)
 
