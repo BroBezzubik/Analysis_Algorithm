@@ -1,0 +1,86 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+	
+\subsection{Требования к программному обеспечению}
+
+	Минимальные системные требования: PC с операционной системой Windows версии XP/Vista/7/8/10. Требуются устройства ввода: клавиатура, мышь. 
+
+\subsection{Средства реализации}
+
+	Для выполнения работы был выбран язык программирования Python ввиду его простоты. И SublimeText3 \href{https://www.sublimetext.com/}{text}
+
+\subsection{Интерфейс}
+
+	Интерфейс из себя представляет простую консоль, где пользователю ничего делать ненужно.
+	
+\subsection{Листинг}
+	
+	В данном подразделе приведены листинги программ.
+	\begin{enumerate}
+		\item алгоритм Кнута - Мориса - Прата \ref{list:1}
+		\item алгоритм Бойера - Мура \ref{list:2}
+	\end{enumerate}
+
+	\begin{lstlisting}[caption=Алгоритм Кнута-Мориса-Прата, label=list:1]
+	
+		def prefix(s):
+		    v = [0] * len(s)
+		    for i in range(1, len(s)):
+		        k = v[i - 1]
+		        while k > 0 and s[k] != s[i]:
+		            k = v[k - 1]
+		        if s[k] == s[i]:
+		            k = k + 1
+		        v[i] = k
+		    return v
+
+		def kmp(s, t):
+		    index = -1
+		    f = prefix(s)
+		    k = 0
+		    for i in range(len(t)):
+		        while k > 0 and s[k] != t[i]:
+		            k = f[k - 1]
+		        if s[k] == t[i]:
+		            k = k + 1
+		        if k == len(s):
+		            index = i - len(s) + 1
+		            break
+		    return index
+	\end{lstlisting}
+	
+	\begin{lstlisting}[label=list:2, caption=Алгоритма Бойера-Мура]
+		def badCharHeuristic(string, size):
+    		badChar = [-1] * 256
+	    	
+	    	for i in range(size):
+	        	badChar[ord(string[i])] = i
+
+    		return badChar
+
+
+		def search(txt, pat):
+		    m = len(pat)
+		    n = len(txt)
+		    badChar = badCharHeuristic(pat, m)
+		    s = 0
+		    while s <= n - m:
+		        j = m - 1
+
+		        while j >= 0 and pat[j] == txt[s + j]:
+		            j -= 1
+
+		        if j < 0:
+		            return s  # Return only first entry
+
+		        else:
+		            s += max(1, j - badChar[ord(txt[s + j])])
+
+		    return -1
+	\end{lstlisting}
+	
+	В данном разделе были приведены листинги алгоритмов Кнута-Мориса-Прата и Бойера-Мура на языке программирования Python, а также была приведена функция тестирования этих алгоритмов.
+
+	
+\end{document}
