@@ -1,0 +1,97 @@
+\documentclass[a4paper, 14pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\usepackage{url}
+\usepackage{hyperref}
+
+\usepackage{titlesec}
+\titleformat*{\section}{\LARGE\bfseries}
+\titleformat*{\subsection}{\Large\bfseries}
+\titleformat*{\subsubsection}{\large\bfseries}
+\titleformat*{\paragraph}{\large\bfseries}
+\titleformat*{\subparagraph}{\large\bfseries}
+
+\usepackage{biblatex}[
+backend = biber,
+style=alphabetic,
+sorting=ynt]
+\addbibresource{./library/document}
+
+\usepackage{listings}
+\lstset{
+	language=Python,
+	numbers=left,
+	frame=single,
+	breaklines=true,
+	breakatwhitespace=true,
+	title=lstname,
+	tabsize=4	
+}
+\usepackage{subfiles}
+\usepackage[shortlabels]{enumitem}
+
+\DeclareUnicodeCharacter{2212}{-}
+
+\begin{document}
+	\begin{titlepage}
+		\begin{center}
+			\begin{LARGE}
+				Отчет по лабораторной работе №3\\
+				по курсу "Анализ алгоритмов"\\
+				по теме "Изучение алгоритмов сортировки"
+			\end{LARGE}
+			
+			\begin{Large}
+				\vspace{10cm}
+				Студент: Барсуков Н.М. ИУ7-56\\
+				Преподаватель: Волкова Л.Л.,
+				Строганов Ю.В.
+			\end{Large}
+		\end{center}
+	\end{titlepage}
+
+	\newpage
+	\tableofcontents
+
+	\newpage
+	\section*{Введение}
+	\subfile{sections/intro}
+	
+	\newpage
+	\section{Аналитический раздел}
+	\subfile{sections/analit}
+	
+	\newpage
+	\section{Конструкторский раздел}
+	\subfile{sections/constructor}
+	
+	\newpage
+	\section{Технологический раздел}
+	\subfile{sections/tech}
+	
+	\newpage
+	\section{Исследовательский раздел}
+	\subfile{sections/disscover}
+	
+	\newpage
+	\section{Заключение}
+	\subfile{sections/end}
+	
+	\newpage
+	\addcontentsline{toc}{section}{Список литературы}
+	\begin{thebibliography}{4}
+		\bibitem{McConnel}
+		Дж. Макконнелл. Анализ алгоритмов. Активный обучающий подход.-
+		М.:Техносфера, 2009.
+		
+		\bibitem{Python 3.8}
+		Электронный ресурс Python 3.8.1 documentation. Режим доступа
+		https://docs.python.org/3/ - свободный. Последнее обращение (28.12.2019)
+	\end{thebibliography}
+	
+\end{document}

@@ -1,0 +1,30 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+	
+	В данном разделе указаны минимальные системные требования. Описан используемый язык и среда разработки.
+	Приведен листинг алгоритмов умножения матриц
+
+\subsection{Минимальные требования}
+
+	Минимальные системные требования: PC с операционной системой Windows XP/Vista/7/8/10. Требуются устройства ввода: клавиатура, мышь. Устройство вывода: монитор.
+
+\subsection{Выбор языка и среды разработки}
+
+	Для решения данной поставленной задачи, мной был выбран язык Python \href{https://docs.python.org/3/whatsnew/3.8.html}{3.8} по удобности и знания. Так же использовалась среда \href{https://www.jetbrains.com/pycharm/}{PyCharm 2019}
+	
+\subsection{Листинг}
+
+	\lstinputlisting[firstline=3, lastline=20, 
+					caption=Классический алгоритм умножения, 
+					label=listing:1]{../../trash/classic.py}
+	
+	\lstinputlisting[firstline=6, lastline=31, 
+					caption=Алгоритм Винограда с поддержкой параллельности, 
+					label=listing:2]{../../test.py}
+					
+	\lstinputlisting[firstline=33, lastline=54, 
+					caption= Функция распараллеливания вычислений алгоритма Винограда по столбцам, 
+					label=listing:2]{../../test.py}
+					
+	
+\end{document}
